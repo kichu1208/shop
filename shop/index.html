@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online T-Shirt Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="brand">Teerex Shop</a>
+    
+    
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+       
+      
+       <a href="checkout.html" class="cart">Cart <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+       
+    </nav>
+
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Gender</h3>
+                <label><input type="checkbox" class="filter" data-filter="gender" value="Male"> Male</label><br>
+                <label><input type="checkbox" class="filter" data-filter="gender" value="Female"> Female</label><br>
+                <label><input type="checkbox" class="filter" data-filter="gender" value="Unisex"> Unisex</label>
+            </div>
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <label><input type="checkbox" class="filter" data-filter="price" value="0-99"> ₹0 - ₹99</label><br>
+                <label><input type="checkbox" class="filter" data-filter="price" value="100-249"> ₹100 - ₹249</label><br>
+                <label><input type="checkbox" class="filter" data-filter="price" value="250-399"> ₹250- ₹399</label>
+            </div>
+            <div class="filter-group">
+                <h3>Color</h3>
+                <label><input type="checkbox" class="filter" data-filter="color" value="Red"> Red</label><br>
+                <label><input type="checkbox" class="filter" data-filter="color" value="Blue"> Blue</label><br>
+                <label><input type="checkbox" class="filter" data-filter="color" value="Green"> Green</label><br>
+                <label><input type="checkbox" class="filter" data-filter="color" value="Yellow"> Yellow</label><br>
+                <label><input type="checkbox" class="filter" data-filter="color" value="Black"> Black</label><br>
+                <label><input type="checkbox" class="filter" data-filter="color" value="White"> White</label>
+            </div>
+            <div class="filter-group">
+                <h3>Type</h3>
+                <label><input type="checkbox" class="filter" data-filter="type" value="Short Sleeve"> Short Sleeve</label><br>
+                <label><input type="checkbox" class="filter" data-filter="type" value="Long Sleeve"> Long Sleeve</label><br>
+                <label><input type="checkbox" class="filter" data-filter="type" value="Tank Top"> Tank Top</label>
+            </div>
+            <button id="apply-filters" class="apply-filters">Apply Filters</button>
+        </aside>
+        <div class="catalog">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search T-Shirts...">
+            <div id="product-list" class="product-list"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
